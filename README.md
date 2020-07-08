@@ -1,5 +1,7 @@
 ## Spotlight web application
 
+Code from https://github.com/projectblacklight/spotlight.git
+
 # Requirements
 - docker (for Linux)
 - docker-compose (for Linux)

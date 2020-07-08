@@ -1,8 +1,8 @@
 ## Spotlight web application
 
 # Requirements
-- docker
-- docker-compose
+- docker (for Linux)
+- docker-compose (for Linux)
 
 # Tested on Debian Linux (buster)
 
@@ -20,6 +20,8 @@ Step 4 will start Apache Solr, Postgres database and Adminer web app to inspect 
 
 ----------------------------------------
 
->Solr runs on port 8983.
->Adminer runs on port 8080.
->Spotlight runs on port 3000.
+Solr runs on port 8983.
+
+Adminer runs on port 8080.
+
+Spotlight runs on port 3000.

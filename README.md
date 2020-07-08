@@ -1,8 +1,8 @@
 ## Spotlight web application
 
 # Requirements
-docker
-docker-compose
+- docker
+- docker-compose
 
 # Tested on Debian Linux (buster)
 
@@ -15,8 +15,8 @@ docker-compose
 This will start Apache Solr, Postgres database and Adminer web app to inspect Postgres database.
 
 5. In separate terminal:
-5.1 rake db:migrate
-5.2 rails server
+- rake db:migrate
+- rails server
 
 ----------------------------------------
 

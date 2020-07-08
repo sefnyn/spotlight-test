@@ -1,0 +1,25 @@
+version: "3.8"
+services:
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    volumes:
+      - $PWD/data/postgresdata:/var/lib/postgresql/data
+    environment:
+      POSTGRES_PASSWORD: password
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+  solr:
+    image: solr:8
+    ports:
+     - 8983:8983
+    volumes:
+      - $PWD/data/solrdata:/var/solr
+    command:
+      - solr-precreate
+      - blacklight-core

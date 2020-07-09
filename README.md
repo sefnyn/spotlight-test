@@ -11,7 +11,7 @@ Code from https://github.com/projectblacklight/spotlight.git
 ## Steps to build
 1. clone repo
 2. cd repo
-3. chown 8983:8983 -R data/solrdata # needed to allow Solr to start
+3. sudo chown 8983:8983 -R data/solrdata # needed to allow Solr to start
 4. docker-compose build
 5. docker-compose up
 

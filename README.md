@@ -9,8 +9,10 @@ Persistent Solr and Postgres data stored in ../spotlight-test/data
 ## Requirements
 - docker 
 - docker-compose 
+- java
+- ImageMagick (http://www.imagemagick.org/script/index.php)
 
-## Docker images from Docker hub
+## Docker images from Docker hub (for information only)
 - solr:8
 - postgres
 - adminer

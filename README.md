@@ -15,7 +15,7 @@ Persistent Solr and Postgres data stored in ../spotlight-test/data
 ## Docker images from Docker hub (for information only)
 - solr:8
 - postgres
-- adminer
+- adminer (web app to inspect a Postgres database)
 
 ## Steps to build
 1. clone repo
@@ -24,9 +24,17 @@ Persistent Solr and Postgres data stored in ../spotlight-test/data
 4. docker-compose build
 5. docker-compose up
 
-Step 5 will start Apache Solr, Postgres database and Adminer web app to inspect Postgres database.
+This will start Apache Solr, Postgres database and Adminer but Solr config will be incorrect.
 
-6. In separate terminal:
+## Copy config files to Solr
+1. CTRL-C to stop docker-compose
+2. sudo cp solr/blacklight-core/conf/solrconfig.xml ../spotlight-test/data/solrdata/data/blacklight-core/conf/.
+3. sudo cp solr/blacklight-core/conf/managed-schema ../spotlight-test/data/solrdata/data/blacklight-core/conf/.
+4. sudo chown 8983:8983 -R data/solrdata # needed to fix Solr config
+5. docker-compose up
+
+## Start Spotlight 
+In separate terminal:
 - cd spotlight-test
 - rake db:migrate
 - rails server

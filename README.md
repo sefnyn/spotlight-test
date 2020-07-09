@@ -2,11 +2,18 @@
 
 Code from https://github.com/projectblacklight/spotlight.git
 
-## Requirements
-- docker (for Linux)
-- docker-compose (for Linux)
+Persistent Solr and Postgres data stored in ../spotlight-test/data
 
-## Tested on Debian Linux (buster)
+**Tested on Debian Linux (buster) only**
+
+## Requirements
+- docker 
+- docker-compose 
+
+## Docker images from Docker hub
+- postgres
+- adminer
+- solr:8
 
 ## Steps to build
 1. clone repo

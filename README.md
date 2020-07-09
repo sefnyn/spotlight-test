@@ -1,28 +1,31 @@
-## Spotlight web application
+# Spotlight web application
 
 Code from https://github.com/projectblacklight/spotlight.git
 
-# Requirements
+## Requirements
 - docker (for Linux)
 - docker-compose (for Linux)
 
-# Tested on Debian Linux (buster)
+## Tested on Debian Linux (buster)
 
-# Steps to build
+## Steps to build
 1. clone repo
 2. cd repo
-3. docker-compose build
-4. docker-compose up
+3. chown 8983:8983 -R data/solrdata # needed to allow Solr to start
+4. docker-compose build
+5. docker-compose up
 
-Step 4 will start Apache Solr, Postgres database and Adminer web app to inspect Postgres database.
+Step 5 will start Apache Solr, Postgres database and Adminer web app to inspect Postgres database.
 
-5. In separate terminal:
+6. In separate terminal:
 - rake db:migrate
 - rails server
 
-----------------------------------------
+## While running
 
 Solr runs on port 8983.
+
+Postgres runs on port 5432.
 
 Adminer runs on port 8080.
 

@@ -11,13 +11,13 @@ Persistent Solr and Postgres data stored in ../spotlight-test/data
 - docker-compose 
 
 ## Docker images from Docker hub
+- solr:8
 - postgres
 - adminer
-- solr:8
 
 ## Steps to build
 1. clone repo
-2. cd repo
+2. cd spotlight-test
 3. sudo chown 8983:8983 -R data/solrdata # needed to allow Solr to start
 4. docker-compose build
 5. docker-compose up
@@ -25,10 +25,11 @@ Persistent Solr and Postgres data stored in ../spotlight-test/data
 Step 5 will start Apache Solr, Postgres database and Adminer web app to inspect Postgres database.
 
 6. In separate terminal:
+- cd spotlight-test
 - rake db:migrate
 - rails server
 
-## While running
+## If all goes well...  :)
 
 Solr runs on port 8983.
 

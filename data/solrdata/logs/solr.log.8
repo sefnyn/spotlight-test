@@ -1,0 +1,273 @@
+2020-07-09 08:53:52.425 INFO  (main) [   ] o.e.j.u.log Logging initialized @1181ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-07-09 08:53:52.652 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 11.0.7+10
+2020-07-09 08:53:52.716 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///opt/solr-8.5.2/server/contexts/] at interval 0
+2020-07-09 08:53:53.091 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-07-09 08:53:53.103 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-07-09 08:53:53.103 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-07-09 08:53:53.107 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2020-07-09 08:53:53.224 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-07-09 08:53:53.230 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.5.2
+2020-07-09 08:53:53.230 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-07-09 08:53:53.230 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /opt/solr
+2020-07-09 08:53:53.231 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-07-09T08:53:53.230975Z
+2020-07-09 08:53:53.288 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /var/solr/data
+2020-07-09 08:53:53.297 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /var/solr/data/solr.xml
+2020-07-09 08:53:53.388 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@282cb7c7, but no JMX reporters were configured - adding default JMX reporter.
+2020-07-09 08:53:54.165 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-07-09 08:53:54.346 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@a518813[provider=null,keyStore=null,trustStore=null]
+2020-07-09 08:53:54.346 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@a518813[provider=null,keyStore=null,trustStore=null]
+2020-07-09 08:53:54.556 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@55e42449[provider=null,keyStore=null,trustStore=null]
+2020-07-09 08:53:54.557 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@55e42449[provider=null,keyStore=null,trustStore=null]
+2020-07-09 08:53:54.593 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2020-07-09 08:53:54.829 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-07-09 08:53:54.831 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-07-09 08:53:54.931 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@282cb7c7
+2020-07-09 08:53:54.931 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@282cb7c7
+2020-07-09 08:53:54.941 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@282cb7c7
+2020-07-09 08:53:54.992 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath /var/solr/data
+2020-07-09 08:53:54.992 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [spotlight, blacklight-core]
+2020-07-09 08:53:55.077 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.c.SolrResourceLoader [blacklight-core] Added 11 libs to classloader, from paths: [/opt/solr/contrib/analysis-extras/lib, /opt/solr/contrib/analysis-extras/lucene-libs]
+2020-07-09 08:53:55.092 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.2
+2020-07-09 08:53:55.154 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@10b892d5{/solr,file:///opt/solr-8.5.2/server/solr-webapp/webapp/,AVAILABLE}{/opt/solr-8.5.2/server/solr-webapp/webapp}
+2020-07-09 08:53:55.184 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@31e75d13{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-07-09 08:53:55.184 INFO  (main) [   ] o.e.j.s.Server Started @3944ms
+2020-07-09 08:53:55.410 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.s.IndexSchema [spotlight] Schema name=default-config
+2020-07-09 08:53:55.503 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 6.1.0
+2020-07-09 08:53:55.583 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.IndexSchema [blacklight-core] Schema name=Hydra
+2020-07-09 08:53:55.601 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.601 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.665 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.675 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.687 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.787 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.789 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.798 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.805 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.806 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.806 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.808 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.808 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.808 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.808 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.810 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.811 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.811 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.813 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.813 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.813 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.813 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.813 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.816 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.816 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.816 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.816 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.816 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.816 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.819 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenizerFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:55.819 WARN  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.FieldTypePluginLoader TokenFilterFactory is using deprecated 6.1.0 emulation. You should at some point declare and reindex to at least 7.0, because 6.x emulation is deprecated and will be removed in 8.0
+2020-07-09 08:53:56.006 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.IndexSchema Loaded schema Hydra/1.5 with uniqueid field id
+2020-07-09 08:53:56.007 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.c.CoreContainer Creating SolrCore 'blacklight-core' using configuration from instancedir /var/solr/data/blacklight-core, trusted=true
+2020-07-09 08:53:56.049 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.blacklight-core' (registry 'solr.core.blacklight-core') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@282cb7c7
+2020-07-09 08:53:56.072 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.c.SolrCore [[blacklight-core] ] Opening new SolrCore at [/var/solr/data/blacklight-core], dataDir=[/var/solr/data/blacklight-core/data/]
+2020-07-09 08:53:56.279 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-07-09 08:53:56.349 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.c.CoreContainer Creating SolrCore 'spotlight' using configuration from instancedir /var/solr/data/spotlight, trusted=true
+2020-07-09 08:53:56.349 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.spotlight' (registry 'solr.core.spotlight') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@282cb7c7
+2020-07-09 08:53:56.354 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.c.SolrCore [[spotlight] ] Opening new SolrCore at [/var/solr/data/spotlight], dataDir=[/var/solr/data/spotlight/data/]
+2020-07-09 08:53:56.723 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-07-09 08:53:56.723 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-07-09 08:53:56.723 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-07-09 08:53:56.723 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-07-09 08:53:56.745 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-07-09 08:53:56.745 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-07-09 08:53:56.761 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.u.CommitTracker Hard AutoCommit: disabled
+2020-07-09 08:53:56.761 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-07-09 08:53:56.833 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.s.SolrIndexSearcher Opening [Searcher@498c1dd5[spotlight] main]
+2020-07-09 08:53:56.846 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/solr/data/spotlight/conf
+2020-07-09 08:53:56.880 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-07-09 08:53:56.889 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-07-09 08:53:56.910 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-07-09 08:53:56.915 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1671728817152983040
+2020-07-09 08:53:56.919 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.SolrIndexSearcher Opening [Searcher@6d186040[blacklight-core] main]
+2020-07-09 08:53:56.920 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/solr/data/blacklight-core/conf
+2020-07-09 08:53:56.921 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-07-09 08:53:56.929 INFO  (searcherExecutor-11-thread-1-processing-x:spotlight) [   x:spotlight] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@498c1dd5[spotlight] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-07-09 08:53:56.929 INFO  (searcherExecutor-11-thread-1-processing-x:spotlight) [   x:spotlight] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-09 08:53:56.929 INFO  (searcherExecutor-11-thread-1-processing-x:spotlight) [   x:spotlight] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-07-09 08:53:56.941 INFO  (searcherExecutor-11-thread-1-processing-x:spotlight) [   x:spotlight] o.a.s.c.SolrCore [spotlight] Registered new searcher Searcher@498c1dd5[spotlight] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-07-09 08:53:56.941 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: default
+2020-07-09 08:53:56.943 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: author
+2020-07-09 08:53:56.944 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: subject
+2020-07-09 08:53:56.945 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.h.c.SpellCheckComponent Registering newSearcher listener for spellchecker: title
+2020-07-09 08:53:56.946 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.h.c.SuggestComponent Initializing SuggestComponent
+2020-07-09 08:53:56.949 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.s.SolrSuggester init: {name=mySuggester,lookupImpl=FuzzyLookupFactory,suggestAnalyzerFieldType=textSuggest,buildOnCommit=true,field=suggest}
+2020-07-09 08:53:56.961 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.s.SolrSuggester No dictionaryImpl parameter was provided falling back to org.apache.solr.spelling.suggest.HighFrequencyDictionaryFactory
+2020-07-09 08:53:56.961 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.s.SolrSuggester Dictionary loaded with params: {name=mySuggester,lookupImpl=FuzzyLookupFactory,suggestAnalyzerFieldType=textSuggest,buildOnCommit=true,field=suggest}
+2020-07-09 08:53:56.962 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.h.c.SuggestComponent Registering searcher listener for suggester: mySuggester - SuggesterListener [core=org.apache.solr.core.SolrCore@2f3fa636, suggester=SolrSuggester [ name=mySuggester, sourceLocation=null, storeDir=, lookupImpl=FuzzyLookupFactory, dictionaryImpl=org.apache.solr.spelling.suggest.HighFrequencyDictionaryFactory, sizeInBytes=0 ], buildOnCommit=true, buildOnOptimize=false, buildOnStartup=true, isCoreReload=false]
+2020-07-09 08:53:56.971 INFO  (searcherExecutor-10-thread-1-processing-x:blacklight-core) [   x:blacklight-core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-07-09 08:53:56.979 INFO  (searcherExecutor-10-thread-1-processing-x:blacklight-core) [   x:blacklight-core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: author
+2020-07-09 08:53:56.980 INFO  (searcherExecutor-10-thread-1-processing-x:blacklight-core) [   x:blacklight-core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: subject
+2020-07-09 08:53:56.981 INFO  (searcherExecutor-10-thread-1-processing-x:blacklight-core) [   x:blacklight-core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: title
+2020-07-09 08:53:56.981 INFO  (searcherExecutor-10-thread-1-processing-x:blacklight-core) [   x:blacklight-core] o.a.s.h.c.SuggestComponent buildOnStartup: mySuggester
+2020-07-09 08:53:56.981 INFO  (searcherExecutor-10-thread-1-processing-x:blacklight-core) [   x:blacklight-core] o.a.s.s.s.SolrSuggester SolrSuggester.build(mySuggester)
+2020-07-09 08:53:57.031 ERROR (searcherExecutor-10-thread-1-processing-x:blacklight-core) [   x:blacklight-core] o.a.s.c.SolrCore null:java.lang.StackOverflowError
+	at org.apache.lucene.util.automaton.Automaton.initTransition(Automaton.java:479)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1301)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortStatesRecurse(Operations.java:1306)
+	at org.apache.lucene.util.automaton.Operations.topoSortSt...
+2020-07-09 08:53:57.036 INFO  (searcherExecutor-10-thread-1-processing-x:blacklight-core) [   x:blacklight-core] o.a.s.c.SolrCore [blacklight-core] Registered new searcher Searcher@6d186040[blacklight-core] main{ExitableDirectoryReader(UninvertingDirectoryReader(Uninverting(_4(8.5.2):C1:[diagnostics={java.vendor=Oracle Corporation, os=Linux, java.version=11.0.7, java.vm.version=11.0.7+10, lucene.version=8.5.2, os.arch=amd64, java.runtime.version=11.0.7+10, source=flush, os.version=4.19.0-9-amd64, timestamp=1594225695000}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_6(8.5.2):C1:[diagnostics={java.vendor=Oracle Corporation, os=Linux, java.version=11.0.7, java.vm.version=11.0.7+10, lucene.version=8.5.2, os.arch=amd64, java.runtime.version=11.0.7+10, source=flush, os.version=4.19.0-9-amd64, timestamp=1594225758618}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}]) Uninverting(_8(8.5.2):C1:[diagnostics={java.vendor=Oracle Corporation, os=Linux, java.version=11.0.7, java.vm.version=11.0.7+10, lucene.version=8.5.2, os.arch=amd64, java.runtime.version=11.0.7+10, source=flush, os.version=4.19.0-9-amd64, timestamp=1594235509064}]:[attributes={Lucene50StoredFieldsFormat.mode=BEST_SPEED}])))}
+2020-07-09 08:54:17.524 INFO  (qtp1731217984-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1594284857389} status=0 QTime=12
+2020-07-09 08:54:17.531 INFO  (qtp1731217984-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1594284857389} status=0 QTime=10
+2020-07-09 08:54:17.557 INFO  (qtp1731217984-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1594284857389} status=0 QTime=42
+2020-07-09 08:54:17.642 INFO  (qtp1731217984-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1594284857389} status=0 QTime=0
+2020-07-09 08:54:17.650 INFO  (qtp1731217984-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1594284857389} status=0 QTime=7
+2020-07-09 08:54:17.663 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={wt=json&_=1594284857389} status=0 QTime=4
+2020-07-09 08:54:21.723 INFO  (qtp1731217984-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1594284857389} status=0 QTime=0
+2020-07-09 08:54:21.734 INFO  (qtp1731217984-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1594284857389} status=0 QTime=6
+2020-07-09 08:54:21.744 INFO  (qtp1731217984-21) [   x:blacklight-core] o.a.s.c.PluginBag Going to create a new requestHandler with {type = requestHandler,name = /replication,class = solr.ReplicationHandler,attributes = {startup=lazy, name=/replication, class=solr.ReplicationHandler},} 
+2020-07-09 08:54:21.745 INFO  (qtp1731217984-21) [   x:blacklight-core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-07-09 08:54:21.760 INFO  (qtp1731217984-23) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1594284861712} status=0 QTime=17
+2020-07-09 08:54:21.761 INFO  (qtp1731217984-20) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1594284857390&ts=1594284857389} status=503 QTime=10
+2020-07-09 08:54:21.768 INFO  (qtp1731217984-21) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/replication params={wt=json&command=details&_=1594284861712} status=0 QTime=24
+2020-07-09 08:54:21.776 INFO  (qtp1731217984-19) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/admin/system params={wt=json&_=1594284861712} status=0 QTime=23
+2020-07-09 08:54:25.903 INFO  (qtp1731217984-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1594284865831} status=0 QTime=0
+2020-07-09 08:54:25.909 INFO  (qtp1731217984-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1594284865832} status=0 QTime=3
+2020-07-09 08:54:25.918 INFO  (qtp1731217984-21) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1594284865892} status=0 QTime=0
+2020-07-09 08:54:25.925 INFO  (qtp1731217984-16) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/replication params={wt=json&command=details&_=1594284865892} status=0 QTime=2
+2020-07-09 08:54:25.932 INFO  (qtp1731217984-20) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1594284865832&ts=1594284865832} status=503 QTime=0
+2020-07-09 08:54:25.932 INFO  (qtp1731217984-18) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/admin/system params={wt=json&_=1594284865892} status=0 QTime=5
+2020-07-09 08:54:28.080 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1594284868002} status=0 QTime=0
+2020-07-09 08:54:28.096 INFO  (qtp1731217984-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1594284868003} status=0 QTime=5
+2020-07-09 08:54:28.102 INFO  (qtp1731217984-18) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1594284868066} status=0 QTime=0
+2020-07-09 08:54:28.103 INFO  (qtp1731217984-21) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/replication params={wt=json&command=details&_=1594284868066} status=0 QTime=2
+2020-07-09 08:54:28.113 INFO  (qtp1731217984-16) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1594284868003&ts=1594284868003} status=503 QTime=0
+2020-07-09 08:54:28.134 INFO  (qtp1731217984-23) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/admin/system params={wt=json&_=1594284868066} status=0 QTime=21
+2020-07-09 08:54:29.344 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1594284869273} status=0 QTime=0
+2020-07-09 08:54:29.356 INFO  (qtp1731217984-18) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1594284869331} status=0 QTime=1
+2020-07-09 08:54:29.361 INFO  (qtp1731217984-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1594284869274} status=0 QTime=6
+2020-07-09 08:54:29.366 INFO  (qtp1731217984-23) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1594284869274&ts=1594284869274} status=503 QTime=0
+2020-07-09 08:54:29.368 INFO  (qtp1731217984-16) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/replication params={wt=json&command=details&_=1594284869332} status=0 QTime=2
+2020-07-09 08:54:29.379 INFO  (qtp1731217984-21) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/admin/system params={wt=json&_=1594284869332} status=0 QTime=6
+2020-07-09 08:55:02.199 INFO  (Thread-0) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@31e75d13{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-07-09 08:55:02.200 INFO  (Thread-0) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-07-09 08:55:02.208 INFO  (Thread-0) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=995531141
+2020-07-09 08:55:02.210 INFO  (coreCloseExecutor-20-thread-1) [   x:spotlight] o.a.s.c.SolrCore [spotlight]  CLOSING SolrCore org.apache.solr.core.SolrCore@71aa9046
+2020-07-09 08:55:02.210 INFO  (coreCloseExecutor-20-thread-1) [   x:spotlight] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.spotlight, tag=SolrCore@71aa9046
+2020-07-09 08:55:02.211 INFO  (coreCloseExecutor-20-thread-1) [   x:spotlight] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7a5dfa64: rootName = null, domain = solr.core.spotlight, service url = null, agent id = null] for registry solr.core.spotlight / com.codahale.metrics.MetricRegistry@44865316
+2020-07-09 08:55:02.214 INFO  (coreCloseExecutor-20-thread-2) [   x:blacklight-core] o.a.s.c.SolrCore [blacklight-core]  CLOSING SolrCore org.apache.solr.core.SolrCore@2f3fa636
+2020-07-09 08:55:02.232 INFO  (coreCloseExecutor-20-thread-2) [   x:blacklight-core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.blacklight-core, tag=SolrCore@2f3fa636
+2020-07-09 08:55:02.233 INFO  (coreCloseExecutor-20-thread-2) [   x:blacklight-core] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@5a6b5f9d: rootName = null, domain = solr.core.blacklight-core, service url = null, agent id = null] for registry solr.core.blacklight-core / com.codahale.metrics.MetricRegistry@3fa5c149
+2020-07-09 08:55:02.251 INFO  (coreCloseExecutor-20-thread-1) [   x:spotlight] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-07-09 08:55:02.283 INFO  (coreCloseExecutor-20-thread-2) [   x:blacklight-core] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-07-09 08:55:02.332 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2020-07-09 08:55:02.333 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@288f173f: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@34f471f3
+2020-07-09 08:55:02.341 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2020-07-09 08:55:02.343 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7b81616b: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@5b334600
+2020-07-09 08:55:02.344 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2020-07-09 08:55:02.344 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@15d42ccb: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@5cd41858
+2020-07-09 08:55:02.361 INFO  (Thread-0) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@10b892d5{/solr,null,UNAVAILABLE}{/opt/solr-8.5.2/server/solr-webapp/webapp}

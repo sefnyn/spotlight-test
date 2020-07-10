@@ -1,0 +1,1341 @@
+2020-07-08 14:55:34.296 INFO  (main) [   ] o.e.j.u.log Logging initialized @1159ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-07-08 14:55:34.538 INFO  (main) [   ] o.e.j.s.Server jetty-9.4.24.v20191120; built: 2019-11-20T21:37:49.771Z; git: 363d5f2df3a8a28de40604320230664b9c793c16; jvm 11.0.7+10
+2020-07-08 14:55:34.585 INFO  (main) [   ] o.e.j.d.p.ScanningAppProvider Deployment monitor [file:///opt/solr-8.5.2/server/contexts/] at interval 0
+2020-07-08 14:55:34.950 INFO  (main) [   ] o.e.j.w.StandardDescriptorProcessor NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+2020-07-08 14:55:34.963 INFO  (main) [   ] o.e.j.s.session DefaultSessionIdManager workerName=node0
+2020-07-08 14:55:34.963 INFO  (main) [   ] o.e.j.s.session No SessionScavenger set, using defaults
+2020-07-08 14:55:34.967 INFO  (main) [   ] o.e.j.s.session node0 Scavenging every 660000ms
+2020-07-08 14:55:35.064 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter Using logger factory org.apache.logging.slf4j.Log4jLoggerFactory
+2020-07-08 14:55:35.070 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter  ___      _       Welcome to Apache Solr™ version 8.5.2
+2020-07-08 14:55:35.070 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter / __| ___| |_ _   Starting in standalone mode on port 8983
+2020-07-08 14:55:35.070 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter \__ \/ _ \ | '_|  Install dir: /opt/solr
+2020-07-08 14:55:35.071 INFO  (main) [   ] o.a.s.s.SolrDispatchFilter |___/\___/_|_|    Start time: 2020-07-08T14:55:35.071172Z
+2020-07-08 14:55:35.161 INFO  (main) [   ] o.a.s.c.SolrResourceLoader Using system property solr.solr.home: /var/solr/data
+2020-07-08 14:55:35.172 INFO  (main) [   ] o.a.s.c.SolrXmlConfig Loading container configuration from /var/solr/data/solr.xml
+2020-07-08 14:55:35.262 INFO  (main) [   ] o.a.s.c.SolrXmlConfig MBean server found: com.sun.jmx.mbeanserver.JmxMBeanServer@282cb7c7, but no JMX reporters were configured - adding default JMX reporter.
+2020-07-08 14:55:35.859 INFO  (main) [   ] o.a.s.h.c.HttpShardHandlerFactory Host whitelist initialized: WhitelistHostChecker [whitelistHosts=null, whitelistHostCheckingEnabled=true]
+2020-07-08 14:55:36.067 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@a518813[provider=null,keyStore=null,trustStore=null]
+2020-07-08 14:55:36.068 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@a518813[provider=null,keyStore=null,trustStore=null]
+2020-07-08 14:55:36.332 WARN  (main) [   ] o.e.j.u.s.S.config Trusting all certificates configured for Client@55e42449[provider=null,keyStore=null,trustStore=null]
+2020-07-08 14:55:36.333 WARN  (main) [   ] o.e.j.u.s.S.config No Client EndPointIdentificationAlgorithm configured for Client@55e42449[provider=null,keyStore=null,trustStore=null]
+2020-07-08 14:55:36.360 WARN  (main) [   ] o.a.s.c.CoreContainer Not all security plugins configured!  authentication=disabled authorization=disabled.  Solr is only as secure as you make it. Consider configuring authentication/authorization before exposing Solr to users internal or external.  See https://s.apache.org/solrsecurity for more info
+2020-07-08 14:55:36.606 INFO  (main) [   ] o.a.s.c.TransientSolrCoreCacheDefault Allocating transient cache for 2147483647 transient cores
+2020-07-08 14:55:36.610 INFO  (main) [   ] o.a.s.h.a.MetricsHistoryHandler No .system collection, keeping metrics history in memory.
+2020-07-08 14:55:36.727 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.node' (registry 'solr.node') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@282cb7c7
+2020-07-08 14:55:36.728 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jvm' (registry 'solr.jvm') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@282cb7c7
+2020-07-08 14:55:36.736 INFO  (main) [   ] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.jetty' (registry 'solr.jetty') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@282cb7c7
+2020-07-08 14:55:36.783 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Found 2 core definitions underneath /var/solr/data
+2020-07-08 14:55:36.784 INFO  (main) [   ] o.a.s.c.CorePropertiesLocator Cores are: [spotlight, blacklight-core]
+2020-07-08 14:55:36.884 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.2
+2020-07-08 14:55:36.902 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.c.SolrConfig Using Lucene MatchVersion: 8.5.2
+2020-07-08 14:55:36.937 INFO  (main) [   ] o.e.j.s.h.ContextHandler Started o.e.j.w.WebAppContext@10b892d5{/solr,file:///opt/solr-8.5.2/server/solr-webapp/webapp/,AVAILABLE}{/opt/solr-8.5.2/server/solr-webapp/webapp}
+2020-07-08 14:55:36.999 INFO  (main) [   ] o.e.j.s.AbstractConnector Started ServerConnector@31e75d13{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-07-08 14:55:37.000 INFO  (main) [   ] o.e.j.s.Server Started @3867ms
+2020-07-08 14:55:37.242 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.s.IndexSchema [spotlight] Schema name=default-config
+2020-07-08 14:55:37.274 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.IndexSchema [blacklight-core] Schema name=default-config
+2020-07-08 14:55:38.208 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-07-08 14:55:38.209 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.IndexSchema Loaded schema default-config/1.6 with uniqueid field id
+2020-07-08 14:55:38.266 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.c.CoreContainer Creating SolrCore 'spotlight' using configuration from instancedir /var/solr/data/spotlight, trusted=true
+2020-07-08 14:55:38.278 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.c.CoreContainer Creating SolrCore 'blacklight-core' using configuration from instancedir /var/solr/data/blacklight-core, trusted=true
+2020-07-08 14:55:38.309 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.blacklight-core' (registry 'solr.core.blacklight-core') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@282cb7c7
+2020-07-08 14:55:38.310 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.m.r.SolrJmxReporter JMX monitoring for 'solr.core.spotlight' (registry 'solr.core.spotlight') enabled at server: com.sun.jmx.mbeanserver.JmxMBeanServer@282cb7c7
+2020-07-08 14:55:38.331 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.c.SolrCore [[blacklight-core] ] Opening new SolrCore at [/var/solr/data/blacklight-core], dataDir=[/var/solr/data/blacklight-core/data/]
+2020-07-08 14:55:38.332 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.c.SolrCore [[spotlight] ] Opening new SolrCore at [/var/solr/data/spotlight], dataDir=[/var/solr/data/spotlight/data/]
+2020-07-08 14:55:39.261 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-07-08 14:55:39.261 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.u.UpdateHandler Using UpdateLog implementation: org.apache.solr.update.UpdateLog
+2020-07-08 14:55:39.261 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-07-08 14:55:39.262 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.u.UpdateLog Initializing UpdateLog: dataDir= defaultSyncLevel=FLUSH numRecordsToKeep=100 maxNumLogsToKeep=10 numVersionBuckets=65536
+2020-07-08 14:55:39.284 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-07-08 14:55:39.284 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.u.CommitTracker Hard AutoCommit: if uncommitted for 15000ms; 
+2020-07-08 14:55:39.284 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-07-08 14:55:39.285 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.u.CommitTracker Soft AutoCommit: disabled
+2020-07-08 14:55:39.403 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.SolrIndexSearcher Opening [Searcher@486d4003[blacklight-core] main]
+2020-07-08 14:55:39.403 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.s.SolrIndexSearcher Opening [Searcher@7d9eca0f[spotlight] main]
+2020-07-08 14:55:39.423 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/solr/data/blacklight-core/conf
+2020-07-08 14:55:39.423 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.r.ManagedResourceStorage File-based storage initialized to use dir: /var/solr/data/spotlight/conf
+2020-07-08 14:55:39.481 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-07-08 14:55:39.484 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.h.c.SpellCheckComponent Initializing spell checkers
+2020-07-08 14:55:39.507 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-07-08 14:55:39.519 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.s.DirectSolrSpellChecker init: {name=default,field=_text_,classname=solr.DirectSolrSpellChecker,distanceMeasure=internal,accuracy=0.5,maxEdits=2,minPrefix=1,maxInspections=5,minQueryLength=4,maxQueryFrequency=0.01}
+2020-07-08 14:55:39.566 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-07-08 14:55:39.581 INFO  (coreLoadExecutor-9-thread-2) [   x:blacklight-core] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1671660977081286656
+2020-07-08 14:55:39.584 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.h.ReplicationHandler Commits will be reserved for 10000ms.
+2020-07-08 14:55:39.587 INFO  (coreLoadExecutor-9-thread-1) [   x:spotlight] o.a.s.u.UpdateLog Could not find max version in index or recent updates, using new clock 1671660977087578112
+2020-07-08 14:55:39.616 INFO  (searcherExecutor-10-thread-1-processing-x:blacklight-core) [   x:blacklight-core] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@486d4003[blacklight-core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-07-08 14:55:39.616 INFO  (searcherExecutor-10-thread-1-processing-x:blacklight-core) [   x:blacklight-core] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-08 14:55:39.617 INFO  (searcherExecutor-10-thread-1-processing-x:blacklight-core) [   x:blacklight-core] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-07-08 14:55:39.627 INFO  (searcherExecutor-11-thread-1-processing-x:spotlight) [   x:spotlight] o.a.s.c.QuerySenderListener QuerySenderListener sending requests to Searcher@7d9eca0f[spotlight] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-07-08 14:55:39.627 INFO  (searcherExecutor-11-thread-1-processing-x:spotlight) [   x:spotlight] o.a.s.c.QuerySenderListener QuerySenderListener done.
+2020-07-08 14:55:39.627 INFO  (searcherExecutor-11-thread-1-processing-x:spotlight) [   x:spotlight] o.a.s.h.c.SpellCheckComponent Loading spell index for spellchecker: default
+2020-07-08 14:55:39.652 INFO  (searcherExecutor-10-thread-1-processing-x:blacklight-core) [   x:blacklight-core] o.a.s.c.SolrCore [blacklight-core] Registered new searcher Searcher@486d4003[blacklight-core] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-07-08 14:55:39.653 INFO  (searcherExecutor-11-thread-1-processing-x:spotlight) [   x:spotlight] o.a.s.c.SolrCore [spotlight] Registered new searcher Searcher@7d9eca0f[spotlight] main{ExitableDirectoryReader(UninvertingDirectoryReader())}
+2020-07-08 14:55:46.404 INFO  (qtp1731217984-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1594220146328} status=0 QTime=11
+2020-07-08 14:55:46.424 INFO  (qtp1731217984-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1594220146329} status=0 QTime=26
+2020-07-08 14:55:46.431 INFO  (qtp1731217984-19) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1594220146382} status=0 QTime=18
+2020-07-08 14:55:46.440 INFO  (qtp1731217984-23) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/admin/system params={wt=json&_=1594220146382} status=0 QTime=24
+2020-07-08 14:55:46.444 INFO  (qtp1731217984-21) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1594220146329&ts=1594220146329} status=503 QTime=21
+2020-07-08 14:55:46.461 INFO  (qtp1731217984-24) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/replication params={wt=json&command=details&_=1594220146382} status=0 QTime=44
+2020-07-08 14:55:49.612 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1594220146328} status=0 QTime=0
+2020-07-08 14:55:49.622 INFO  (qtp1731217984-20) [   x:spotlight] o.a.s.c.S.Request [spotlight]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1594220146382} status=0 QTime=2
+2020-07-08 14:55:49.624 INFO  (qtp1731217984-19) [   x:spotlight] o.a.s.c.S.Request [spotlight]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1594220146329&ts=1594220146329} status=503 QTime=0
+2020-07-08 14:55:49.628 INFO  (qtp1731217984-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1594220146329} status=0 QTime=14
+2020-07-08 14:55:49.635 INFO  (qtp1731217984-23) [   x:spotlight] o.a.s.c.S.Request [spotlight]  webapp=/solr path=/replication params={wt=json&command=details&_=1594220146382} status=0 QTime=2
+2020-07-08 14:55:49.641 INFO  (qtp1731217984-21) [   x:spotlight] o.a.s.c.S.Request [spotlight]  webapp=/solr path=/admin/system params={wt=json&_=1594220146382} status=0 QTime=14
+2020-07-08 14:55:52.653 INFO  (qtp1731217984-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1594220146328} status=0 QTime=0
+2020-07-08 14:55:52.659 INFO  (qtp1731217984-22) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1594220146329} status=0 QTime=4
+2020-07-08 14:55:52.668 INFO  (qtp1731217984-18) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=2
+2020-07-08 14:55:55.943 INFO  (qtp1731217984-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1594220146328} status=0 QTime=0
+2020-07-08 14:55:55.954 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1594220146329} status=0 QTime=5
+2020-07-08 14:55:55.976 INFO  (qtp1731217984-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1594220146329} status=0 QTime=9
+2020-07-08 14:56:36.212 ERROR (qtp1731217984-22) [   x:blacklight-core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field exhibit_rdm_public_bsi
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1319)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:462)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:313)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:303)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:328)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+2020-07-08 14:56:36.213 INFO  (qtp1731217984-22) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/select params={facet.query=exhibit_rdm_public_bsi:false&facet.field=exhibit_rdm_tags_ssim&qt=search&f.exhibit_rdm_tags_ssim.facet.limit=11&fl=*&fq={!term+f%3Dspotlight_exhibit_slug_rdm_bsi}true&sort=score+desc&rows=10&facet=true&wt=json} hits=0 status=400 QTime=68
+2020-07-08 14:56:45.716 ERROR (qtp1731217984-23) [   x:blacklight-core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field exhibit_rdm_public_bsi
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1319)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:462)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:313)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:303)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:328)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+2020-07-08 14:56:45.716 INFO  (qtp1731217984-23) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/select params={facet.query=exhibit_rdm_public_bsi:false&facet.field=exhibit_rdm_tags_ssim&qt=search&f.exhibit_rdm_tags_ssim.facet.limit=11&fl=*&fq={!term+f%3Dspotlight_exhibit_slug_rdm_bsi}true&sort=score+desc&rows=10&facet=true&wt=json} hits=0 status=400 QTime=2
+2020-07-08 14:56:52.841 ERROR (qtp1731217984-22) [   x:blacklight-core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field exhibit_rdm_public_bsi
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1319)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:462)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:313)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:303)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:328)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+2020-07-08 14:56:52.841 INFO  (qtp1731217984-22) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/select params={facet.query=exhibit_rdm_public_bsi:false&facet.field=exhibit_rdm_tags_ssim&qt=search&f.exhibit_rdm_tags_ssim.facet.limit=11&fl=*&fq={!term+f%3Dspotlight_exhibit_slug_rdm_bsi}true&sort=score+desc&rows=10&facet=true&wt=json} hits=0 status=400 QTime=1
+2020-07-08 14:57:02.583 ERROR (qtp1731217984-19) [   x:blacklight-core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field exhibit_rdm_public_bsi
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1319)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:462)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:313)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:303)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:328)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+2020-07-08 14:57:02.583 INFO  (qtp1731217984-19) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/select params={facet.query=exhibit_rdm_public_bsi:false&facet.field=exhibit_rdm_tags_ssim&qt=search&f.exhibit_rdm_tags_ssim.facet.limit=11&fl=*&fq={!term+f%3Dspotlight_exhibit_slug_rdm_bsi}true&sort=score+desc&rows=10&facet=true&wt=json} hits=0 status=400 QTime=1
+2020-07-08 14:57:24.403 ERROR (qtp1731217984-23) [   x:blacklight-core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field exhibit_rdm_public_bsi
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1319)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:462)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:313)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:303)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:328)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+2020-07-08 14:57:24.404 INFO  (qtp1731217984-23) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/select params={facet.query=exhibit_rdm_public_bsi:false&facet.field=exhibit_rdm_tags_ssim&qt=search&f.exhibit_rdm_tags_ssim.facet.limit=11&fl=*&fq={!term+f%3Dspotlight_exhibit_slug_rdm_bsi}true&sort=score+desc&rows=10&facet=true&wt=json} hits=0 status=400 QTime=1
+2020-07-08 14:57:31.271 ERROR (qtp1731217984-19) [   x:blacklight-core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field exhibit_rdm_public_bsi
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1319)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:462)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:313)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:303)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:328)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+2020-07-08 14:57:31.271 INFO  (qtp1731217984-19) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/select params={facet.query=exhibit_rdm_public_bsi:false&facet.field=exhibit_rdm_tags_ssim&qt=search&f.exhibit_rdm_tags_ssim.facet.limit=11&fl=*&fq={!term+f%3Dspotlight_exhibit_slug_rdm_bsi}true&sort=score+desc&rows=10&facet=true&wt=json} hits=0 status=400 QTime=1
+2020-07-08 14:57:44.277 ERROR (qtp1731217984-22) [   x:blacklight-core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field exhibit_rdm_public_bsi
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1319)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:462)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:313)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:303)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:328)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+2020-07-08 14:57:44.277 INFO  (qtp1731217984-22) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/select params={facet.query=exhibit_rdm_public_bsi:false&facet.field=exhibit_rdm_tags_ssim&qt=search&f.exhibit_rdm_tags_ssim.facet.limit=11&fl=*&fq={!term+f%3Dspotlight_exhibit_slug_rdm_bsi}true&sort=score+desc&rows=10&facet=true&wt=json} hits=0 status=400 QTime=1
+2020-07-08 14:58:00.508 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1594220146328} status=0 QTime=0
+2020-07-08 14:58:00.509 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 14:58:00.528 INFO  (qtp1731217984-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1594220146329} status=0 QTime=11
+2020-07-08 14:58:10.476 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 14:58:13.628 INFO  (qtp1731217984-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1594220146328} status=0 QTime=0
+2020-07-08 14:58:13.649 INFO  (qtp1731217984-44) [   x:spotlight] o.a.s.c.S.Request [spotlight]  webapp=/solr path=/admin/luke params={numTerms=0&show=index&wt=json&_=1594220146382} status=0 QTime=0
+2020-07-08 14:58:13.651 INFO  (qtp1731217984-23) [   x:spotlight] o.a.s.c.S.Request [spotlight]  webapp=/solr path=/replication params={wt=json&command=details&_=1594220146382} status=0 QTime=0
+2020-07-08 14:58:13.656 INFO  (qtp1731217984-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1594220146329} status=0 QTime=6
+2020-07-08 14:58:13.670 INFO  (qtp1731217984-19) [   x:spotlight] o.a.s.c.S.Request [spotlight]  webapp=/solr path=/admin/ping params={action=status&wt=json&_=1594220146329&ts=1594220146329} status=503 QTime=0
+2020-07-08 14:58:13.674 INFO  (qtp1731217984-21) [   x:spotlight] o.a.s.c.S.Request [spotlight]  webapp=/solr path=/admin/system params={wt=json&_=1594220146382} status=0 QTime=7
+2020-07-08 14:58:29.263 INFO  (qtp1731217984-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1594220146328} status=0 QTime=0
+2020-07-08 14:58:29.272 INFO  (qtp1731217984-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1594220146329} status=0 QTime=6
+2020-07-08 14:58:29.282 INFO  (qtp1731217984-21) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1594220146329} status=0 QTime=5
+2020-07-08 15:00:26.995 ERROR (qtp1731217984-42) [   x:blacklight-core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field exhibit_rdm_public_bsi
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1319)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:462)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:313)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:303)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:328)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+2020-07-08 15:00:26.995 INFO  (qtp1731217984-42) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/select params={facet.query=exhibit_rdm_public_bsi:false&facet.field=exhibit_rdm_tags_ssim&qt=search&f.exhibit_rdm_tags_ssim.facet.limit=11&fl=*&fq={!term+f%3Dspotlight_exhibit_slug_rdm_bsi}true&sort=score+desc&rows=10&facet=true&wt=json} hits=0 status=400 QTime=2
+2020-07-08 15:06:12.612 INFO  (qtp1731217984-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=4
+2020-07-08 15:06:12.612 INFO  (qtp1731217984-46) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1594220146328} status=0 QTime=8
+2020-07-08 15:06:12.616 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/system params={wt=json&_=1594220146329} status=0 QTime=15
+2020-07-08 15:06:22.534 INFO  (qtp1731217984-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:06:32.546 INFO  (qtp1731217984-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=1
+2020-07-08 15:06:42.536 INFO  (qtp1731217984-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:06:52.537 INFO  (qtp1731217984-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:07:02.538 INFO  (qtp1731217984-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:07:12.546 INFO  (qtp1731217984-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:07:22.540 INFO  (qtp1731217984-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:07:32.541 INFO  (qtp1731217984-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:07:42.547 INFO  (qtp1731217984-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=1
+2020-07-08 15:07:52.543 INFO  (qtp1731217984-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:08:02.544 INFO  (qtp1731217984-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:08:12.548 INFO  (qtp1731217984-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:08:22.550 INFO  (qtp1731217984-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:08:32.549 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:08:42.551 INFO  (qtp1731217984-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:08:52.552 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:09:02.553 INFO  (qtp1731217984-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:09:12.554 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:09:22.555 INFO  (qtp1731217984-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:09:32.556 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:09:42.557 INFO  (qtp1731217984-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:09:52.563 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:10:02.558 INFO  (qtp1731217984-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:10:12.560 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:10:22.563 INFO  (qtp1731217984-19) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:10:25.189 INFO  (qtp1731217984-21) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/admin/ping params={wt=json} hits=0 status=0 QTime=15
+2020-07-08 15:10:25.189 INFO  (qtp1731217984-21) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/admin/ping params={wt=json} status=0 QTime=15
+2020-07-08 15:10:25.488 INFO  (qtp1731217984-20) [   x:blacklight-core] o.a.s.s.ManagedIndexSchema Upgraded to managed schema at /var/solr/data/blacklight-core/conf/managed-schema
+2020-07-08 15:10:25.588 INFO  (qtp1731217984-20) [   x:blacklight-core] o.a.s.u.p.LogUpdateProcessorFactory [blacklight-core]  webapp=/solr path=/update params={wt=json}{add=[test123 (1671661906034688000)]} 0 243
+2020-07-08 15:10:25.596 INFO  (qtp1731217984-21) [   x:blacklight-core] o.a.s.u.p.LogUpdateProcessorFactory [blacklight-core]  webapp=/solr path=/update params={wt=json}{add=[test123 (1671661906133254144)]} 0 4
+2020-07-08 15:10:25.606 INFO  (qtp1731217984-20) [   x:blacklight-core] o.a.s.u.p.LogUpdateProcessorFactory [blacklight-core]  webapp=/solr path=/update params={wt=json}{delete=[test123 (-1671661906143739904)]} 0 5
+2020-07-08 15:10:32.562 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:10:40.587 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 start commit{,optimize=false,openSearcher=false,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
+2020-07-08 15:10:40.588 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.u.SolrIndexWriter Calling setCommitData with IW:org.apache.solr.update.SolrIndexWriter@8181e6f commitCommandVersion:0
+2020-07-08 15:10:40.694 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.s.SolrIndexSearcher Opening [Searcher@2c77c02[blacklight-core] realtime]
+2020-07-08 15:10:40.694 INFO  (commitScheduler-17-thread-1) [   ] o.a.s.u.DirectUpdateHandler2 end_commit_flush
+2020-07-08 15:10:42.564 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:10:52.563 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:11:02.566 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:11:12.566 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:11:22.567 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:11:32.568 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:11:42.570 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:11:52.572 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:12:02.572 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:12:12.573 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:12:22.573 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:12:32.574 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:12:42.579 INFO  (qtp1731217984-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:12:52.576 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:13:02.578 INFO  (qtp1731217984-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:13:12.578 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:13:22.579 INFO  (qtp1731217984-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:13:32.579 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:13:42.581 INFO  (qtp1731217984-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:13:52.582 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:14:02.583 INFO  (qtp1731217984-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:14:12.583 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:14:22.584 INFO  (qtp1731217984-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:14:32.586 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:14:42.586 INFO  (qtp1731217984-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:14:52.587 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:15:02.589 INFO  (qtp1731217984-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:15:12.589 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:15:22.590 INFO  (qtp1731217984-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:15:32.587 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:15:42.595 INFO  (qtp1731217984-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:15:52.592 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:16:02.594 INFO  (qtp1731217984-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:16:12.595 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:16:22.596 INFO  (qtp1731217984-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:16:32.600 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:16:42.598 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:16:52.598 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:17:02.599 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:17:12.597 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:17:22.600 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:17:32.598 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:17:42.602 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:17:52.605 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:18:02.605 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:18:12.609 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:18:21.961 ERROR (qtp1731217984-19) [   x:blacklight-core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field exhibit_rdm_public_bsi
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1319)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:462)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:313)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:303)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:328)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+2020-07-08 15:18:21.962 INFO  (qtp1731217984-19) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/select params={facet.query=exhibit_rdm_public_bsi:false&facet.field=exhibit_rdm_tags_ssim&qt=search&f.exhibit_rdm_tags_ssim.facet.limit=11&fl=*&fq={!term+f%3Dspotlight_exhibit_slug_rdm_bsi}true&sort=score+desc&rows=10&facet=true&wt=json} hits=0 status=400 QTime=1
+2020-07-08 15:18:23.041 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:18:33.726 ERROR (qtp1731217984-20) [   x:blacklight-core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field exhibit_rdm_public_bsi
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1319)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:462)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:313)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:303)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:328)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+2020-07-08 15:18:33.726 INFO  (qtp1731217984-20) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/select params={facet.query=exhibit_rdm_public_bsi:false&facet.field=exhibit_rdm_tags_ssim&qt=search&f.exhibit_rdm_tags_ssim.facet.limit=11&fl=*&fq={!term+f%3Dspotlight_exhibit_slug_rdm_bsi}true&sort=score+desc&rows=10&facet=true&wt=json} hits=0 status=400 QTime=1
+2020-07-08 15:18:34.039 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:18:34.713 ERROR (qtp1731217984-19) [   x:blacklight-core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field exhibit_rdm_public_bsi
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1319)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:462)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:313)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:303)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:328)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+2020-07-08 15:18:34.713 INFO  (qtp1731217984-19) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/select params={facet.query=exhibit_rdm_public_bsi:false&facet.field=exhibit_rdm_tags_ssim&qt=search&f.exhibit_rdm_tags_ssim.facet.limit=11&fl=*&fq={!term+f%3Dspotlight_exhibit_slug_rdm_bsi}true&sort=score+desc&rows=10&facet=true&wt=json} hits=0 status=400 QTime=1
+2020-07-08 15:18:35.660 ERROR (qtp1731217984-20) [   x:blacklight-core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field exhibit_rdm_public_bsi
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1319)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:462)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:313)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:303)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:328)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+2020-07-08 15:18:35.660 INFO  (qtp1731217984-20) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/select params={facet.query=exhibit_rdm_public_bsi:false&facet.field=exhibit_rdm_tags_ssim&qt=search&f.exhibit_rdm_tags_ssim.facet.limit=11&fl=*&fq={!term+f%3Dspotlight_exhibit_slug_rdm_bsi}true&sort=score+desc&rows=10&facet=true&wt=json} hits=0 status=400 QTime=1
+2020-07-08 15:18:44.045 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:18:54.043 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:19:04.042 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:19:14.045 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:19:24.043 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:19:34.043 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:19:44.049 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:19:54.048 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:20:04.049 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:20:14.054 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:20:16.997 ERROR (qtp1731217984-19) [   x:blacklight-core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field exhibit_rdm_public_bsi
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1319)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:462)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:313)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:303)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:328)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+2020-07-08 15:20:16.998 INFO  (qtp1731217984-19) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/select params={facet.query=exhibit_rdm_public_bsi:false&facet.field=exhibit_rdm_tags_ssim&qt=search&f.exhibit_rdm_tags_ssim.facet.limit=11&fl=*&fq={!term+f%3Dspotlight_exhibit_slug_rdm_bsi}true&sort=score+desc&rows=10&facet=true&wt=json} hits=0 status=400 QTime=1
+2020-07-08 15:20:24.054 INFO  (qtp1731217984-23) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:20:34.056 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:20:44.056 INFO  (qtp1731217984-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:20:54.051 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:21:04.055 INFO  (qtp1731217984-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:21:14.061 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:21:24.060 INFO  (qtp1731217984-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:21:34.067 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:21:44.065 INFO  (qtp1731217984-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:21:54.069 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:22:04.070 INFO  (qtp1731217984-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:22:14.067 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:22:24.070 INFO  (qtp1731217984-15) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:22:34.068 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:22:44.066 INFO  (qtp1731217984-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:22:54.073 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:23:04.071 INFO  (qtp1731217984-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:23:14.077 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:23:24.074 INFO  (qtp1731217984-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:23:34.070 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:23:45.047 INFO  (qtp1731217984-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:23:56.045 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:24:07.043 INFO  (qtp1731217984-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:24:18.045 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:24:29.041 INFO  (qtp1731217984-49) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:24:40.041 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:24:51.042 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:25:02.047 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:25:13.039 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:25:24.059 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:25:35.046 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:25:46.044 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:25:57.043 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:26:08.044 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:26:19.042 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:26:30.041 INFO  (qtp1731217984-20) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:26:41.042 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:26:52.045 INFO  (qtp1731217984-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:27:03.047 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:27:14.049 INFO  (qtp1731217984-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:27:25.045 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:27:36.044 INFO  (qtp1731217984-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:27:47.044 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:27:58.041 INFO  (qtp1731217984-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:28:02.016 ERROR (qtp1731217984-42) [   x:blacklight-core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field exhibit_rdm_public_bsi
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1319)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:462)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:313)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:303)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:328)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+2020-07-08 15:28:02.017 INFO  (qtp1731217984-42) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/select params={facet.query=exhibit_rdm_public_bsi:false&facet.field=exhibit_rdm_tags_ssim&qt=search&f.exhibit_rdm_tags_ssim.facet.limit=11&fl=*&fq={!term+f%3Dspotlight_exhibit_slug_rdm_bsi}true&sort=score+desc&rows=10&facet=true&wt=json} hits=0 status=400 QTime=2
+2020-07-08 15:28:09.045 INFO  (qtp1731217984-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:28:20.050 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:28:20.238 ERROR (qtp1731217984-19) [   x:blacklight-core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field exhibit_rdm_public_bsi
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1319)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:462)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:313)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:303)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:328)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+2020-07-08 15:28:20.238 INFO  (qtp1731217984-19) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/select params={facet.query=exhibit_rdm_public_bsi:false&facet.field=exhibit_rdm_tags_ssim&qt=search&f.exhibit_rdm_tags_ssim.facet.limit=11&fl=*&fq={!term+f%3Dspotlight_exhibit_slug_rdm_bsi}true&sort=score+desc&rows=10&facet=true&wt=json} hits=0 status=400 QTime=1
+2020-07-08 15:28:21.193 ERROR (qtp1731217984-24) [   x:blacklight-core] o.a.s.h.RequestHandlerBase org.apache.solr.common.SolrException: undefined field exhibit_rdm_public_bsi
+	at org.apache.solr.schema.IndexSchema.getDynamicFieldType(IndexSchema.java:1319)
+	at org.apache.solr.schema.IndexSchema$SolrQueryAnalyzer.getWrappedAnalyzer(IndexSchema.java:462)
+	at org.apache.lucene.analysis.DelegatingAnalyzerWrapper$DelegatingReuseStrategy.getReusableComponents(DelegatingAnalyzerWrapper.java:86)
+	at org.apache.lucene.analysis.Analyzer.tokenStream(Analyzer.java:192)
+	at org.apache.lucene.util.QueryBuilder.createFieldQuery(QueryBuilder.java:262)
+	at org.apache.solr.parser.SolrQueryParserBase.newFieldQuery(SolrQueryParserBase.java:527)
+	at org.apache.solr.parser.QueryParser.newFieldQuery(QueryParser.java:62)
+	at org.apache.solr.parser.SolrQueryParserBase.getFieldQuery(SolrQueryParserBase.java:1102)
+	at org.apache.solr.parser.SolrQueryParserBase.handleBareTokenQuery(SolrQueryParserBase.java:825)
+	at org.apache.solr.parser.QueryParser.Term(QueryParser.java:421)
+	at org.apache.solr.parser.QueryParser.Clause(QueryParser.java:278)
+	at org.apache.solr.parser.QueryParser.Query(QueryParser.java:162)
+	at org.apache.solr.parser.QueryParser.TopLevelQuery(QueryParser.java:131)
+	at org.apache.solr.parser.SolrQueryParserBase.parse(SolrQueryParserBase.java:263)
+	at org.apache.solr.search.LuceneQParser.parse(LuceneQParser.java:49)
+	at org.apache.solr.search.QParser.getQuery(QParser.java:174)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCount(SimpleFacets.java:313)
+	at org.apache.solr.request.SimpleFacets.getFacetQueryCounts(SimpleFacets.java:303)
+	at org.apache.solr.handler.component.FacetComponent.getFacetCounts(FacetComponent.java:318)
+	at org.apache.solr.handler.component.FacetComponent.process(FacetComponent.java:274)
+	at org.apache.solr.handler.component.SearchHandler.handleRequestBody(SearchHandler.java:328)
+	at org.apache.solr.handler.RequestHandlerBase.handleRequest(RequestHandlerBase.java:211)
+	at org.apache.solr.core.SolrCore.execute(SolrCore.java:2596)
+	at org.apache.solr.servlet.HttpSolrCall.execute(HttpSolrCall.java:802)
+	at org.apache.solr.servlet.HttpSolrCall.call(HttpSolrCall.java:579)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:420)
+	at org.apache.solr.servlet.SolrDispatchFilter.doFilter(SolrDispatchFilter.java:352)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1596)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:545)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:590)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:221)
+	at org.eclipse.jetty.server.handler.InetAccessHandler.handle(InetAccessHandler.java:177)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.rewrite.handler.RewriteHandler.handle(RewriteHandler.java:322)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+2020-07-08 15:28:21.193 INFO  (qtp1731217984-24) [   x:blacklight-core] o.a.s.c.S.Request [blacklight-core]  webapp=/solr path=/select params={facet.query=exhibit_rdm_public_bsi:false&facet.field=exhibit_rdm_tags_ssim&qt=search&f.exhibit_rdm_tags_ssim.facet.limit=11&fl=*&fq={!term+f%3Dspotlight_exhibit_slug_rdm_bsi}true&sort=score+desc&rows=10&facet=true&wt=json} hits=0 status=400 QTime=0
+2020-07-08 15:28:31.046 INFO  (qtp1731217984-24) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:28:42.045 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:28:53.040 INFO  (qtp1731217984-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:29:04.045 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:29:15.037 INFO  (qtp1731217984-16) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:29:26.041 INFO  (qtp1731217984-42) [   ] o.a.s.s.HttpSolrCall [admin] webapp=null path=/admin/info/logging params={wt=json&_=1594220152645&since=0} status=0 QTime=0
+2020-07-08 15:29:46.666 INFO  (Thread-0) [   ] o.e.j.s.AbstractConnector Stopped ServerConnector@31e75d13{HTTP/1.1,[http/1.1, h2c]}{0.0.0.0:8983}
+2020-07-08 15:29:46.666 INFO  (Thread-0) [   ] o.e.j.s.session node0 Stopped scavenging
+2020-07-08 15:29:46.677 INFO  (Thread-0) [   ] o.a.s.c.CoreContainer Shutting down CoreContainer instance=995531141
+2020-07-08 15:29:46.678 INFO  (coreCloseExecutor-20-thread-1) [   x:blacklight-core] o.a.s.c.SolrCore [blacklight-core]  CLOSING SolrCore org.apache.solr.core.SolrCore@6177b075
+2020-07-08 15:29:46.678 INFO  (coreCloseExecutor-20-thread-1) [   x:blacklight-core] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.blacklight-core, tag=SolrCore@6177b075
+2020-07-08 15:29:46.679 INFO  (coreCloseExecutor-20-thread-1) [   x:blacklight-core] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@29e4d71: rootName = null, domain = solr.core.blacklight-core, service url = null, agent id = null] for registry solr.core.blacklight-core / com.codahale.metrics.MetricRegistry@7acf2ada
+2020-07-08 15:29:46.683 INFO  (coreCloseExecutor-20-thread-2) [   x:spotlight] o.a.s.c.SolrCore [spotlight]  CLOSING SolrCore org.apache.solr.core.SolrCore@7b77f79b
+2020-07-08 15:29:46.700 INFO  (coreCloseExecutor-20-thread-2) [   x:spotlight] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.core.spotlight, tag=SolrCore@7b77f79b
+2020-07-08 15:29:46.701 INFO  (coreCloseExecutor-20-thread-2) [   x:spotlight] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@50b611e1: rootName = null, domain = solr.core.spotlight, service url = null, agent id = null] for registry solr.core.spotlight / com.codahale.metrics.MetricRegistry@2d7c645f
+2020-07-08 15:29:46.711 INFO  (coreCloseExecutor-20-thread-1) [   x:blacklight-core] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-07-08 15:29:46.739 INFO  (coreCloseExecutor-20-thread-2) [   x:spotlight] o.a.s.u.DirectUpdateHandler2 Committing on IndexWriter.close()  ... SKIPPED (unnecessary).
+2020-07-08 15:29:46.755 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.node, tag=null
+2020-07-08 15:29:46.755 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@288f173f: rootName = null, domain = solr.node, service url = null, agent id = null] for registry solr.node / com.codahale.metrics.MetricRegistry@222da942
+2020-07-08 15:29:46.759 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jvm, tag=null
+2020-07-08 15:29:46.763 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@7b81616b: rootName = null, domain = solr.jvm, service url = null, agent id = null] for registry solr.jvm / com.codahale.metrics.MetricRegistry@11abfd41
+2020-07-08 15:29:46.765 INFO  (Thread-0) [   ] o.a.s.m.SolrMetricManager Closing metric reporters for registry=solr.jetty, tag=null
+2020-07-08 15:29:46.765 INFO  (Thread-0) [   ] o.a.s.m.r.SolrJmxReporter Closing reporter [org.apache.solr.metrics.reporters.SolrJmxReporter@15d42ccb: rootName = null, domain = solr.jetty, service url = null, agent id = null] for registry solr.jetty / com.codahale.metrics.MetricRegistry@38e63d40
+2020-07-08 15:29:46.796 INFO  (Thread-0) [   ] o.e.j.s.h.ContextHandler Stopped o.e.j.w.WebAppContext@10b892d5{/solr,null,UNAVAILABLE}{/opt/solr-8.5.2/server/solr-webapp/webapp}

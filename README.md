@@ -24,14 +24,7 @@ Persistent Solr and Postgres data stored in ../spotlight-test/data
 4. docker-compose build
 5. docker-compose up
 
-This will start Apache Solr, Postgres database and Adminer but Solr config will be incorrect.
-
-## Copy config files to Solr
-1. CTRL-C to stop docker-compose
-2. sudo cp solr/blacklight-core/conf/solrconfig.xml ../spotlight-test/data/solrdata/data/blacklight-core/conf/.
-3. sudo cp solr/blacklight-core/conf/managed-schema ../spotlight-test/data/solrdata/data/blacklight-core/conf/.
-4. sudo chown 8983:8983 -R data/solrdata # needed to fix Solr config
-5. docker-compose up
+This will start Apache Solr, Postgres database and Adminer.
 
 ## Start Spotlight 
 In separate terminal:

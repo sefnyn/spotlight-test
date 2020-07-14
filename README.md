@@ -2,7 +2,7 @@
 
 Code from https://github.com/projectblacklight/spotlight.git
 
-Persistent Solr and Postgres data stored in ../spotlight-test/data
+Persistent Solr and Postgres data stored in ../spotlight-on-docker/data
 
 **Tested on Debian Linux (buster) only**
 
@@ -19,7 +19,7 @@ Persistent Solr and Postgres data stored in ../spotlight-test/data
 
 ## Steps to build
 1. clone repo
-2. cd spotlight-test
+2. cd spotlight-on-docker
 3. sudo chown -R 8983:8983 data/solrdata # needed to allow Solr to start
 4. docker-compose build
 5. docker-compose up
@@ -28,7 +28,7 @@ This will start Apache Solr, Postgres database and Adminer.
 
 ## Start Spotlight 
 In separate terminal:
-- cd spotlight-test
+- cd spotlight-on-docker
 - rake db:migrate
 - rails server
 

@@ -1,8 +1,10 @@
 # Spotlight web application
 
-Code from https://github.com/projectblacklight/spotlight.git
+Quickly build a Spotlight web app using Docker images and a snapshot of the code repo.  Persistent Solr and Postgres data stored in ../spotlight-on-docker/data
 
-Persistent Solr and Postgres data stored in ../spotlight-on-docker/data
+Code repo: https://github.com/projectblacklight/spotlight.git
+
+Product web site: http://spotlight.projectblacklight.org/
 
 **Tested on Debian Linux (buster) only**
 

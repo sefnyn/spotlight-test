@@ -31,7 +31,7 @@ This will start Apache Solr, Postgres database and Adminer.
 ## Start Spotlight 
 In separate terminal:
 - cd spotlight-on-docker
-- rake db:migrate
+- rake db:migrate  # creates 29 tables in database
 - rails server
 
 ## If all goes well...  :)

@@ -40,6 +40,6 @@ Solr runs on port 8983.
 
 Postgres runs on port 5432.
 
-Adminer runs on port 8080.  Database: postgres; User/password: postgres/password
+Adminer runs on port 8080.  Database: postgres; Username/password: postgres/password
 
 Spotlight runs on port 3000.

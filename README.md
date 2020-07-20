@@ -6,9 +6,12 @@ Code repo: https://github.com/projectblacklight/spotlight.git
 
 Product web site: http://spotlight.projectblacklight.org/
 
-**Tested on Debian Linux (buster) only**
+Tested on:
+- Debian Linux (buster)
+- MacOS Catalina
 
 ## Requirements
+- ruby 2.5.5
 - docker 
 - docker-compose 
 - java
@@ -22,7 +25,7 @@ Product web site: http://spotlight.projectblacklight.org/
 ## Steps to build
 1. clone repo
 2. cd spotlight-on-docker
-3. sudo chown -R 8983:8983 data/solrdata # needed to allow Solr to start
+3. sudo chown -R 8983:8983 data/solrdata # Linux only; needed to allow Solr to start
 4. docker-compose build
 5. docker-compose up
 

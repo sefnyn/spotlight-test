@@ -11,11 +11,17 @@ Tested on:
 - MacOS Catalina
 
 ## Requirements
-- ruby 2.5.5 (+ bundler + gems)
+- ruby 2.5.5
+- bundler
 - docker 
 - docker-compose 
 - java
 - ImageMagick (http://www.imagemagick.org/script/index.php)
+
+## MacOS extra requirements
+- homebrew
+- brew install nodejs
+- brew install postgresql
 
 ## Docker images from Docker hub (for information only)
 - solr:8
@@ -25,9 +31,10 @@ Tested on:
 ## Steps to build
 1. clone repo
 2. cd spotlight-on-docker
-3. sudo chown -R 8983:8983 data/solrdata # Linux only; needed to allow Solr to start
-4. docker-compose build
-5. docker-compose up
+3. bundle install
+4. sudo chown -R 8983:8983 data/solrdata # Linux only; needed to allow Solr to start
+5. docker-compose build
+6. docker-compose up
 
 This will start Apache Solr, Postgres database and Adminer.
 

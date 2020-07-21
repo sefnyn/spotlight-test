@@ -11,7 +11,7 @@ Tested on:
 - MacOS Catalina
 
 ## Requirements
-- ruby 2.5.5
+- ruby 2.5.5 (+ bundler + gems)
 - docker 
 - docker-compose 
 - java

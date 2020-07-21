@@ -16,7 +16,7 @@ Tested on:
 - docker 
 - docker-compose 
 - java
-- ImageMagick (http://www.imagemagick.org/script/index.php)
+- ImageMagick (http://www.imagemagick.org/script/index.php)  [Optional]
 
 ## MacOS extra requirements
 - homebrew

@@ -16,11 +16,11 @@ Tested on:
 - docker 
 - docker-compose 
 - java
+- nodejs
 - ImageMagick (http://www.imagemagick.org/script/index.php)  [Optional]
 
 ## MacOS extra requirements
 - homebrew
-- brew install nodejs
 - brew install postgresql
 
 ## Docker images from Docker hub (for information only)
@@ -41,6 +41,7 @@ This will start Apache Solr, Postgres database and Adminer.
 ## Start Spotlight 
 In separate terminal:
 - cd spotlight-on-docker
+- gem install rake
 - rake db:migrate  # creates 29 tables in database
 - rails server
 
